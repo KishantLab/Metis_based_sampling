@@ -107,4 +107,16 @@ python setup.py build_ext --inplace
 ---
 
 
-# 
+### After successful installation, the framework is ready to execute 
+### Note: While building and installing the framework, the Metis based sampling is compiled and installed
+
+### Move to graphsage directory
+```bash
+cd examples/pytorch/graphsage/
+```
+
+### Run the Script 
+```bash
+bash run_script_respmm.sh ogbn-arxiv 100
+```
+### This script runs for all fanouts and batch sizes specified in the paper for the 100-epoch provided dataset.
